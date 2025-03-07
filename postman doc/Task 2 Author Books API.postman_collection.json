@@ -1,0 +1,462 @@
+{
+	"info": {
+		"_postman_id": "1fb5915b-be27-48be-ac1d-19aaca728c04",
+		"name": "Task 2 Author Books API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24851140",
+		"_collection_link": "https://crimson-desert-446143.postman.co/workspace/Team-Workspace~572b3c87-781f-4db3-8e72-fb0adf25a725/collection/24851140-1fb5915b-be27-48be-ac1d-19aaca728c04?action=share&source=collection_link&creator=24851140"
+	},
+	"item": [
+		{
+			"name": "Author",
+			"item": [
+				{
+					"name": "Get All Authors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/authors",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"authors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Author",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/authors/67ca2a8123d8a7d76953ac4d",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"authors",
+								"67ca2a8123d8a7d76953ac4d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Author",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"author 2\",\r\n    \"birthdate\":\"1996-03-07\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/authors",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"authors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Author",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"name\":\"ali sds\"\r\n    \"birthdate\":\"2005-02-12\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/authors/67ca61883ffdf3dd0e27b930",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"authors",
+								"67ca61883ffdf3dd0e27b930"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Author",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/authors/67ca2a8123d8a7d76953ac4d",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"authors",
+								"67ca2a8123d8a7d76953ac4d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Book",
+			"item": [
+				{
+					"name": "Get All Books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/books",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Book",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/books/67cb268e0fd556878f5444b4",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"books",
+								"67cb268e0fd556878f5444b4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"author\":\"67ca61883ffdf3dd0e27b930\",\r\n    \"title\":\"frist book\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/books",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Book",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"fjj\",\r\n    \"publishedDate\":\"2011-01-10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/books/67cb268e0fd556878f5444b4",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"books",
+								"67cb268e0fd556878f5444b4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Book",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"test update\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/books/67ca7092102bbee7d890c68e",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"books",
+								"67ca7092102bbee7d890c68e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Author / Book",
+			"item": [
+				{
+					"name": "Get All Books on Author",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/authors/67ca6e702a577925b049fa77/books",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"authors",
+								"67ca6e702a577925b049fa77",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get  Book on Author",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/authors/67ca6e702a577925b049fa7a/books/67cb268e0fd556878f5444b4",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"authors",
+								"67ca6e702a577925b049fa7a",
+								"books",
+								"67cb268e0fd556878f5444b4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Book on Author",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"test book 5\",\r\n    \"publishedDate\":\"2000-02-15\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/authors/67ca6e702a577925b049fa77/books",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"authors",
+								"67ca6e702a577925b049fa77",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Book on Author",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"test update\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/authors/67ca6e702a577925b049fa77/books/67ca7092102bbee7d890c68e",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"authors",
+								"67ca6e702a577925b049fa77",
+								"books",
+								"67ca7092102bbee7d890c68e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Book on Author",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"test update\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/authors/67ca6e702a577925b049fa77/books/67ca7092102bbee7d890c68e",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"authors",
+								"67ca6e702a577925b049fa77",
+								"books",
+								"67ca7092102bbee7d890c68e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
