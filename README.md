@@ -18,8 +18,8 @@ Create a REST API that manages authors and their books, demonstrating relations 
 ### 1. Clone the Repository
 
 ```sh
-git clone [<repository_url>](https://github.com/HassanEssam0110/Task-2-books-authors-crud-api)
-cd <Task-2-books-authors-crud-api>
+git clone https://github.com/HassanEssam0110/Task-2-books-authors-crud-api
+cd Task-2-books-authors-crud-api
 ```
 
 ### 2. Install Dependencies
